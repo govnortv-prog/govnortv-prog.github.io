@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+:root {
+    --bgc1: #2F2F2F;
+}
+
+
+
+/* header */
+
+header {
+    display: flex;
+
+    position: fixed;
+    left: 0;
+
+
+    width: 65px;
+    height: 760px;
+
+    background-color: var(--bgc1);
+}
+
