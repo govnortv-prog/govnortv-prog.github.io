@@ -54,10 +54,7 @@
             </div>
             <div class="header-space"></div>
         </header>
-    </div>
-
-    <!-- main -->
-    <div class="container">
+        <!-- main -->
         <main>
             <div class="space">
 
@@ -100,6 +97,84 @@
                     </div>
                 </div>
 
+
+
+
+
+
+
+
+
+                <section class="summary">
+                    <div class="summary-title">
+                        <h2>ПОЧЕМУ ИМЕННО МЫ<span>?</span></h2>
+                        <div class="summary-sub3title">
+                            <div></div>
+                            <p><span>4</span> ПРИЧИНЫ ВЫБРАТЬ НАС</p>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="summary-list">
+                        <div>
+                            <button class="summary-button" type="button">
+                                <span class="summary-number">01</span>
+                                <span class="summary-slash"></span>
+                                <span class="summary-name">СКОРОСТЬ ДОСТАВКИ</span>
+                                <span class="summary-plus">+</span>
+                            </button>
+                            <div class="summary-answer">Мы быстро доставляем заказы и заранее сообщаем о каждом этапе
+                                пути.</div>
+                        </div>
+                        <div class="summary-space"></div>
+                        <div>
+                            <button class="summary-button" type="button">
+                                <span class="summary-number">02</span>
+                                <span class="summary-slash"></span>
+                                <span class="summary-name">ЗОНА ПОКРЫТИЯ</span>
+                                <span class="summary-plus">+</span>
+                            </button>
+                            <div class="summary-answer">Привезём посылку в нужное место благодаря большой зоне доставки.
+                            </div>
+                        </div>
+                        <div class="summary-space"></div>
+                        <div>
+                            <button class="summary-button" type="button">
+                                <span class="summary-number">03</span>
+                                <span class="summary-slash"></span>
+                                <span class="summary-name">ПОЛНАЯ СТРАХОВКА ТОВАРА</span>
+                                <span class="summary-plus">+</span>
+                            </button>
+                            <div class="summary-answer">Каждый заказ защищён: мы бережно относимся к товару от отправки
+                                до получения.</div>
+                        </div>
+                        <div class="summary-space"></div>
+                        <div>
+                            <button class="summary-button" type="button">
+                                <span class="summary-number">04</span>
+                                <span class="summary-slash"></span>
+                                <span class="summary-name">КРУГЛОСУТОЧНАЯ ДОСТАВКА</span>
+                                <span class="summary-plus">+</span>
+                            </button>
+                            <div class="summary-answer">Оформляйте доставку в любое время — мы работаем круглосуточно.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </main>
     </div>
@@ -118,6 +193,13 @@
 
         set_time();
         setInterval(set_time, 1000);
+
+        document.querySelectorAll('.summary-button').forEach(function (button) {
+            button.addEventListener('click', function () {
+                const item = button.parentElement;
+                item.classList.toggle('summary-open');
+            });
+        });
     </script>
 
 
