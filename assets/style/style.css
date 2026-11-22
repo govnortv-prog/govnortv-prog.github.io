@@ -364,9 +364,7 @@ main {
 
 /* summary */
 
-.summary-list {
-    padding: 20px 80px 40px;
-}
+
 
 .summary {
     margin-top: 75px;
@@ -412,6 +410,10 @@ main {
 
 }
 
+.summary-list {
+    padding: 20px 40px 40px;
+}
+
 .summary-space {
     width: 100%;
     height: 5px;
@@ -419,15 +421,17 @@ main {
     border-radius: 50px;
 }
 
-
-
 .summary-button {
     display: flex;
     align-items: center;
+
+
     width: 100%;
     height: 100px;
 
-    padding: 0 70px;
+    box-sizing: border-box;
+
+    padding: 0 30px;
     border: 0;
     background: transparent;
     color: var(--ct2);
@@ -436,58 +440,45 @@ main {
     text-align: left;
     cursor: pointer;
 
+    .summary-number {
+
+        font-size: 50px;
+        font-family: 'helvetica';
+    }
 
 
-}
+    .summary-button img {
+        display: flex;
+        padding: 0 20px 13px;
+    }
 
-.summary-number {
-    width: 73px;
-    font-size: 39px;
-}
+    .summary-name {
+        font-size: 31px;
+    }
 
-.summary-button img {
-    display: block;
-    width: 41px;
-    height: 74px;
-    margin: 0 20px 0 0;
-    /* transform: scale(0.8); */
-}
+    .summary-plus {
+        margin-left: auto;
+        font-family: 'helvetica';
+        font-size: 35px;
+        transition: transform 0.12s;
+    }
 
-.summary-name {
-    font-size: 31px;
-}
+    .summary-list details[open] .summary-plus {
+        transform: rotate(45deg) scale(130%);
+    }
 
-.summary-plus {
-    margin-left: auto;
-    font-family: Arial, sans-serif;
-    font-size: 31px;
-    font-weight: normal;
-    line-height: 25px;
-    transition: transform 0.9s;
+
 }
 
 .summary-answer {
     display: none;
     padding: 0 70px 22px 105px;
-    color: var(--ct2);
+    color: black;
     font-family: 'inter';
-    font-size: 17px;
-    line-height: 1.4;
-}
-
-/* native details */
-.summary-list details > summary {
-    list-style: none;
-}
-
-.summary-list details > summary::-webkit-details-marker {
-    display: none;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .summary-list details[open] .summary-answer {
     display: block;
-}
-
-.summary-list details[open] .summary-plus {
-    transform: rotate(45deg);
 }
