@@ -116,49 +116,49 @@
                     </div>
 
                     <div class="summary-list">
-                        <div>
-                            <button class="summary-button" type="button">
+                        <details>
+                            <summary class="summary-button">
                                 <span class="summary-number">01</span>
-                                <span class="summary-slash"></span>
+                                <img src="./assets/image/sum/slash.svg" alt="">
                                 <span class="summary-name">СКОРОСТЬ ДОСТАВКИ</span>
                                 <span class="summary-plus">+</span>
-                            </button>
+                            </summary>
                             <div class="summary-answer">Мы быстро доставляем заказы и заранее сообщаем о каждом этапе
                                 пути.</div>
-                        </div>
+                        </details>
                         <div class="summary-space"></div>
-                        <div>
-                            <button class="summary-button" type="button">
+                        <details>
+                            <summary class="summary-button">
                                 <span class="summary-number">02</span>
-                                <span class="summary-slash"></span>
+                                <img src="./assets/image/sum/slash.svg" alt="">
                                 <span class="summary-name">ЗОНА ПОКРЫТИЯ</span>
                                 <span class="summary-plus">+</span>
-                            </button>
+                            </summary>
                             <div class="summary-answer">Привезём посылку в нужное место благодаря большой зоне доставки.
                             </div>
-                        </div>
+                        </details>
                         <div class="summary-space"></div>
-                        <div>
-                            <button class="summary-button" type="button">
+                        <details>
+                            <summary class="summary-button">
                                 <span class="summary-number">03</span>
-                                <span class="summary-slash"></span>
+                                <img src="./assets/image/sum/slash.svg" alt="">
                                 <span class="summary-name">ПОЛНАЯ СТРАХОВКА ТОВАРА</span>
                                 <span class="summary-plus">+</span>
-                            </button>
+                            </summary>
                             <div class="summary-answer">Каждый заказ защищён: мы бережно относимся к товару от отправки
                                 до получения.</div>
-                        </div>
+                        </details>
                         <div class="summary-space"></div>
-                        <div>
-                            <button class="summary-button" type="button">
+                        <details>
+                            <summary class="summary-button">
                                 <span class="summary-number">04</span>
-                                <span class="summary-slash"></span>
+                                <img src="./assets/image/sum/slash.svg" alt="">
                                 <span class="summary-name">КРУГЛОСУТОЧНАЯ ДОСТАВКА</span>
                                 <span class="summary-plus">+</span>
-                            </button>
+                            </summary>
                             <div class="summary-answer">Оформляйте доставку в любое время — мы работаем круглосуточно.
                             </div>
-                        </div>
+                        </details>
                     </div>
                 </section>
 
@@ -194,12 +194,6 @@
         set_time();
         setInterval(set_time, 1000);
 
-        document.querySelectorAll('.summary-button').forEach(function (button) {
-            button.addEventListener('click', function () {
-                const item = button.parentElement;
-                item.classList.toggle('summary-open');
-            });
-        });
     </script>
 
 
