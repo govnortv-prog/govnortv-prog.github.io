@@ -13,7 +13,21 @@
     <!-- header -->
     <div class="container c-relative">
         <header>
+            <div class="header-space"></div>
+            <div class="header-content">
+                <article>
+                    <div class="header-logo">
+                        <img src="./assets/image/banner/" alt="">
+                    </div>
+                    <nav>
 
+                    </nav>
+                    <div class="profile">
+                        
+                    </div>
+                </article>
+            </div>
+            <div class="header-space"></div>
         </header>
     </div>
 
@@ -33,6 +47,9 @@
                     <div class="banner-photo">
                         <img src="./assets/image/banner/banner.svg" alt="">
                     </div>
+                    <div class="banner-time">
+                        <div id="clock">00:00:00</div>
+                    </div>
                     <div class="banner-nav">
                         <nav>
                             <a href="">О нас</a>
@@ -41,21 +58,44 @@
                             <a href="">faq</a>
                             <a href="">Наши технологии</a>
                             <a href="">Форма заказа</a>
-                            <a href="">123123123</a>
+
                         </nav>
                         <div class="banner-button">
-                            <a href="" id="banner-button-1">1</a>
-                            <a href="" id="banner-button-2">2</a>
+                            <a href="" id="banner-button-1"></a>
+                            <a href="" id="banner-button-2"></a>
                         </div>
                     </div>
                     <div class="banner-bottom">
-
+                        <div>
+                            <p id="banner-bottom-1">Доставка из будущего</p>
+                        </div>
+                        <div id="banner-bottom-div">
+                            <p id="banner-bottom-2">В настоящее</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </main>
     </div>
+
+    <script>
+        function set_time() {
+            const time = new Date();
+
+            const time_String = time.toLocaleTimeString('ru-RU', {
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            document.getElementById('clock').textContent = time_String;
+        }
+
+        set_time();
+        setInterval(set_time, 1000);
+    </script>
+
+
 
 </body>
 

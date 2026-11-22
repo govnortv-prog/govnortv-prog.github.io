@@ -18,6 +18,7 @@ html {
 
     --ct1: #F9810A;
     --ct2: #1F1F1F;
+    --ct3: #289C79;
 }
 
 /* fonts */
@@ -36,12 +37,14 @@ html {
 
 .c-relative {
     position: relative;
+
 }
 
 /* header */
 
 header {
     display: flex;
+    flex-direction: column;
 
     position: absolute;
     z-index: 100;
@@ -49,10 +52,26 @@ header {
 
 
     width: 65px;
-    height: 760px;
+    height: 100vh;
 
-    background-color: var(--cbg1);
+    .header-space {
+        height: 25%
+    }
 
+    .header-content {
+
+        background-color: var(--cbg1);
+        max-height: 600px;
+        /* height: 100%; */
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+article {
+    
 }
 
 /* main */
@@ -74,8 +93,6 @@ main {
 .banner {
     /* background-color: #2f2f2f20; */
     position: relative;
-
-    /* padding: 20px; */
 
     .banner-tittle {
         display: flex;
@@ -111,15 +128,40 @@ main {
 
     .banner-photo {
         display: flex;
-        position: absolute;
+        justify-content: end;
+        /* position: absolute; */
 
         z-index: 2;
 
         right: 0;
 
+        filter: drop-shadow(-3px 4px 6px rgba(0, 0, 0, 0.5));
+
         img {
             width: 754px;
         }
+    }
+
+    .banner-time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: 20px;
+        right: 25px;
+
+        width: 113px;
+        height: 40px;
+
+        font-family: 'inter';
+        font-weight: 500;
+        font-size: 25px;
+        /* padding: 5px 27px; */
+        border-radius: 100px;
+
+        color: white;
+        background-color: var(--cbg1);
     }
 
     .banner-nav {
@@ -129,10 +171,13 @@ main {
 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         padding: 10px;
+        gap: 10px;
 
 
         width: 370px;
+        height: 328px;
         /* background-color: #2F2F2F; */
 
         nav {
@@ -144,7 +189,7 @@ main {
             font-size: 15px;
 
             gap: 3px;
-            row-gap: 3px;
+            row-gap: 7px;
 
             text-transform: uppercase;
 
@@ -153,9 +198,18 @@ main {
                 color: var(--tc2);
                 padding: 10px 15px;
 
-                background: #fafafa;
-                border: 3px solid rgba(47, 47, 47, 0.7);
-                border-radius: 200px;
+                background: #f3f3f3;
+                border: 3px solid rgba(47, 47, 47, 0.5);
+                border-radius: 100px;
+
+
+                &:hover {
+                    background-color: var(--ct3);
+                    color: white;
+                    transition: 0.12s;
+                }
+
+                transition: 0.12s;
             }
 
             .contrast {
@@ -166,22 +220,69 @@ main {
 
         .banner-button {
             display: flex;
+            justify-content: space-between;
             width: 100%;
-            height: 146px;
+            height: 140px;
 
             a {
-                width: 100%;
+                width: 175px;
                 height: 100%;
+                border-radius: 13px;
                 background: var(--cbg1);
+
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
             }
 
             #banner-button-1 {
-                
+                background-image: url('../image/banner/btn1.svg');
             }
 
             #banner-button-2 {
-
+                background-image: url('../image/banner/btn2.svg');
             }
         }
+    }
+
+    .banner-bottom {
+        position: absolute;
+        z-index: -1;
+        top: 502px;
+
+        display: flex;
+        flex-direction: column;
+        width: 616px;
+        height: 235px;
+
+        font-family: 'PaluiSP';
+
+        color: var(--ct2);
+
+        div {
+            padding: 0 5px;
+            width: 100%;
+            height: 50%;
+            /* background-color: #F9810A; */
+            overflow: hidden;
+        }
+
+        #banner-bottom-div {
+            display: flex;
+            align-items: center;
+        }
+
+        #banner-bottom-1 {
+            transform: scale(1.6, 7);
+            transform-origin: left top;
+        }
+
+        #banner-bottom-2 {
+            display: flex;
+
+            transform-origin: left center;
+            transform: scale(2.89, 8);
+        }
+
     }
 }
