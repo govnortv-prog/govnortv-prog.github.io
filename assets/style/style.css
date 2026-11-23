@@ -530,3 +530,39 @@ main {
         padding-bottom: 10px;
     }
 }
+
+.calk-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: var(--cbg1);
+    
+    
+    border-radius: 50px;
+
+
+    margin-top: 70px;
+    h2 {
+        padding-top: 10px;
+        font-size: 45px;
+        font-family: 'PaluiSP';
+
+        color: white;
+
+        span {
+            color: #F9810A;
+        }
+    }
+}
+
+.calk {
+
+}
+
+.calk-car {
+    
+}
