@@ -35,20 +35,20 @@
                 </div>
                 <div class="header-col2">
                     <div class="header-logo">
-                        <a href="">Главная</a>
+                        <a href="#banner">Главная</a>
                     </div>
                     <nav>
-                        <a href="">Главная</a>
-                        <a href="">Информация</a>
-                        <a href="">Машины</a>
-                        <a href="">Калькулятор</a>
-                        <a href="">Спорсоры</a>
-                        <a href="">Вопросы</a>
-                        <a href="">Технологии</a>
-                        <a href="">Гит хаб</a>
+                        <a href="#banner">Главная</a>
+                        <a href="#about">Информация</a>
+                        <a href="#calk-car">Машины</a>
+                        <a href="#calk-content">Калькулятор</a>
+                        <a href="#company">Спорсоры</a>
+                        <a href="#summary2">Вопросы</a>
+                        <a href="#tech">Технологии</a>
+                        <a href="https://github.com/govnortv-prog/web-sp">Гит хаб</a>
                     </nav>
                     <div class="profile">
-                        <a href="">Профль</a>
+                        <a href="profile">Профиль</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
 
             <div class="main-content">
 
-                <div class="banner">
+                <div class="banner" id="banner">
                     <div class="banner-tittle">
                         <h1><span>К</span><span>У</span><span>Б</span><span>Е</span><span>Р</span></h1>
                     </div>
@@ -74,17 +74,17 @@
                     </div>
                     <div class="banner-nav">
                         <nav>
-                            <a href="">О нас</a>
-                            <a href="">Наши партнёры</a>
-                            <a href="" class="contrast">Калькулятор доставки</a>
-                            <a href="">faq</a>
-                            <a href="">Наши технологии</a>
-                            <a href="">Форма заказа</a>
+                            <a href="#about">О нас</a>
+                            <a href="#company">Наши партнёры</a>
+                            <a href="#calk-content" class="contrast">Калькулятор доставки</a>
+                            <a href="#summary2">faq</a>
+                            <a href="#tech">Наши технологии</a>
+                            <a href="#take-call">Форма заказа</a>
 
                         </nav>
                         <div class="banner-button">
-                            <a href="" id="banner-button-1"></a>
-                            <a href="" id="banner-button-2"></a>
+                            <a href="get" id="banner-button-1"></a>
+                            <a href="post" id="banner-button-2"></a>
                         </div>
                     </div>
                     <div class="banner-bottom">
@@ -105,7 +105,7 @@
 
 
 
-                <section class="summary">
+                <section class="summary" id="about">
                     <div class="summary-title">
                         <h2>ПОЧЕМУ ИМЕННО МЫ<span>?</span></h2>
                         <div class="summary-sub3title">
@@ -162,7 +162,9 @@
                     </div>
                 </section>
 
-                <div class="company">
+
+
+                <div class="company" id="company">
                     <div class="company-list">
                         <a href=""><img src="./assets/image/company/vkusvill.svg" alt=""></a>
                         <a href=""><img src="./assets/image/company/aliexpress.svg" alt=""></a>
@@ -193,12 +195,12 @@
 
                 <div class="calk">
 
-                    <div class="calk-car">
+                    <div class="calk-car" id="calk-car">
                         <img src="./assets/image/calk/big-car.svg" alt="" height="144px">
                         <img src="./assets/image/calk/efn.svg" alt="" height="100px">
                         <img src="./assets/image/calk/fpv.svg" alt="" height="80px">
                     </div>
-                    <div class="calk-content">
+                    <div class="calk-content" id="calk-content">
                         <div class="calk-row1">
                             <label for="save" class="custom-checkbox calc-checkbox">
                                 <span class="checkbox-box"></span>
@@ -291,7 +293,10 @@
                     </div>
 
                 </div>
-                <section class="summary">
+
+
+
+                <section class="summary" id="summary2">
                     <div class="summary-title">
                         <h2>ОСТАЛИСЬ ВПОРОСЫ<span>?</span></h2>
                     </div>
@@ -311,7 +316,7 @@
                             <summary class="summary-button">
                                 <span class="summary-number">02</span>
                                 <img src="./assets/image/sum/slash.svg" alt="">
-                                <span class="summary-name">Как узнать где сейчас находится мой заказ?</span>
+                                <span class="summary-name">Как узнать где сейчас находится мой заказ</span>
                                 <span class="summary-plus">+</span>
                             </summary>
                             <div class="summary-answer">Привезём посылку в нужное место благодаря большой зоне доставки.
@@ -341,25 +346,29 @@
                         </details>
                     </div>
                 </section>
-                <div class="take-call">
+
+
+
+                <div class="take-call" id="take-call">
                     <h4 class="take-call-title">Закажи <span>звонок сейчас</span></h4>
                     <form action="" class="call-form">
                         <div class="form-content">
-                        <p class="call-form-description">Наш специалист перезвонит вам в течение <span>30 минут</span></p>
+                            <p class="call-form-description">Наш специалист перезвонит вам в течение <span>30
+                                    минут</span></p>
                             <div class="form-fields">
                                 <div class="fields-1">
-                                <div class="call-form-field"><label for="">ФИО *</label>
-                                    <input type="text">
+                                    <div class="call-form-field"><label for="">ФИО *</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="call-form-field"><label for="">Номер телефона *</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="call-form-field">
+                                        <label for="">Доп почта</label>
+                                        <input type="text">
+                                    </div>
                                 </div>
-                                <div class="call-form-field"><label for="">Номер телефона *</label>
-                                    <input type="text">
-                                </div>
-                                <div class="call-form-field">
-                                    <label for="">Доп почта</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="fields-2">
+                                <div class="fields-2">
                                     <div class="call-form-field">
                                         <label for="">Пожелания</label>
                                         <textarea name="" id=""></textarea>
@@ -368,16 +377,83 @@
                                         <label for="">Примерный вес *</label>
                                         <input type="text">
                                     </div>
+                                </div>
+                                <button>Запрос</button>
                             </div>
-                            <button>Запрос</button>
                         </div>
-                            </div>
                     </form>
+                    <div class="podborodok"></div>
                 </div>
 
+                <div class="tech" id="tech">
+                    <div class="tech-tittle">
+                        <img src="./assets/image/tech/tech.svg" alt="">
+                    </div>
+                    <div class="cards">
+                        <div class="card" id="card">
+                            <img src="./assets/image/tech/card-3.svg" alt="" id="img1">
+                            <div class="card-title">
+                                Тринога
+                            </div>
+                            <div class="card-sub-title">
+                                Наш популярный<br>бот грузовоз
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/image/tech/card-1.svg" alt="" id="img2">
+                            <div class="card-title">
+                                Материал Т-4
+                            </div>
+                            <div class="card-sub-title">
+                                Супер современный <br> противо ударный материал
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./assets/image/tech/card-2.svg" alt="" id="img3">
+                            <div class="card-title">
+                                Вольза - 40
+                            </div>
+                            <div class="card-sub-title">
+                                Наш главный флагман <br>
+                                реактивный БПЛА <br>
+                                для сверхсрочных заказов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <footer>
+                    <div class="footer-col1">
 
-
+                        <div class="footer-logo">
+                            <a href="">
+                                <img src="./assets/image/footer/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="footer-sock">
+                            <a href="https://max.ru"><img src="./assets/image/footer/max.svg" alt=""></a>
+                            <a href="https://vk.ru"><img src="./assets/image/footer/vk.svg" alt=""></a>
+                            <a href="https://gosuslugi.ru"><img src="./assets/image/footer/odno.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="footer-col2">
+                        <span>Основное</span>
+                        <a href="#banner">Главная</a>
+                        <a href="#company">Партнёры</a>
+                        <a href="#about">Это мы</a>
+                        <a href="#tech">Наши Техлогии</a>
+                    </div>
+                    <div class="footer-col3">
+                        <span>Связь</span>
+                        <a href="#take-call">Форма заказа</a>
+                        <a href="#summary2">FAQ</a>
+                        <a href="#calk-content">Калькулятор</a>
+                    </div>
+                    <div class="footer-col4">
+                        <a href="mailto:cuber@cuber.com">cuber@cuber.com</a>
+                        <a href="tel:+75673453434">+7 (564) 345-34-34</a>
+                    </div>
+                </footer>
 
 
 
